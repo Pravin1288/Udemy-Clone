@@ -1,0 +1,202 @@
+/* Making all margin and padding to zero */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling the body font using google fonts */
+body {
+    font-family: "Gabarito", sans-serif;
+}
+
+/* Styling the navbar */
+.navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* Adding border bottom */
+    border-bottom: solid black 1px;
+    /* Adding gap between Title: udemy, Search Box, & Icons, For this the parent is class="navbar" */
+    gap: 10px;
+    /* Alighning the elements (title:udemy, searchbar and icons) in the horizontal line (keeping it as centre) , watch 6.2 from 10:00 I guess then at 40:00 */
+    align-items: center;
+    /* Still some things (s2 and s3 are not in horizontal line, so executing align-items: center; in s2 and s3) */
+
+
+}
+
+/* First Division */
+.navbar__s1__title {
+    /* Adding color to title Udemy */
+    color: #A435F0;
+}
+
+/* Second Division */
+.navbar__s2 {
+    /* Designing Search Bar */
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 30px;
+    /* Increasing the width size of the search bar */
+    width: 60%;
+    /* Adding Flex */
+    display: flex;
+    /* Adding gap between search button and text starting as search for anything */
+    gap: 10px;
+    /* Alighning the elements (title:udemy, searchbar and icons) in the horizontal line (keeping it as centre) , watch 6.2 from 10:00 I guess then at 40:00 */
+    align-items: center;
+}
+
+.navbar__s2 input {
+    /* Designing input box in the Search Bar */
+
+    /* Claring the border inside the search bar */
+    border: none;
+    /* Increasing the width size of the "text area" in the search bar */
+    /* Text area in the sense "Search for anything here. Tech, Business, etc" placeholder area */
+    width: 100%;
+    /* Increasing the font size of the "text area" in the search bar */
+    font-size: 15px;
+    /* Adding gap between Title: udemy, Search Box, & Icons, For this the parent is class="navbar" */
+    /* Therefore setting gap:10px in navbar */
+}
+
+/* From psuedo class / Hover concept
+We are removing the input focus box outline from the search bar */
+.navbar__s2 input:focus {
+    outline: none;
+}
+
+/* Third Division */
+.navbar__s3 {
+    display: flex;
+    gap: 10px;
+    /* Alighning the elements (title:udemy, searchbar and icons) in the horizontal line (keeping it as centre) , watch 6.2 from 10:00 I guess then at 40:00 */
+    align-items: center;
+}
+
+/* Styling the navbar ends here*/
+
+
+/* Categories Part Starts */
+.categories {
+    padding: 10px;
+    display: flex;
+    /* Setting up the border line */
+    border-bottom: solid black 1px;
+    /* Adding equal space across all the items */
+    justify-content: space-around;
+}
+
+/* Adding BG box on all category items , NOT FOR THE CATEGORY, only category items */
+/* Getting into the paragraph of the container  */
+.categories p {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+/* Categories Part Ends here */
+
+
+/* Sales Image Part Starts */
+.sale-image img {
+    width: 100%;
+}
+
+/* Sales Image Part Ends Here */
+
+/* Recommend - Course card Part Starts */
+.recommended {
+    padding: 10px;
+}
+
+/* All the below are in index.html */
+/* <!-- Creating another div container --> */
+/* <div class="recommended__container"> */
+/* <!-- Creating another div item 01 in the container --> */
+/* <!-- Creating another div item 02 in the container --> */
+/* <!-- Creating another div item 03 in the container --> */
+/* <!-- Creating another div item 04 in the container --> */
+/* Created a container, and all the 4 items are in the container,
+therfore introducing FLEX to make all the item in the gorizontal (row) order*/
+.recommended__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Adding space between "pick the best fit and attached images  */
+    margin-top: 10px;
+}
+
+.course-card {
+    /* course card width is 100% in total, in that I am designing the course card item as 20% */
+    /* width: 20%; When we minimising/remaximize it is not shrinking/wrapping, so making it as 20px instead of percentage */
+    width: 450px;
+}
+
+.course-card img {
+    /* To make all the size of the image to below width and height to give equal size appearance */
+    width: 100%;
+    height: 50%;
+}
+
+/* Topics Section */
+.topics{
+    padding: 10px;
+}
+
+.topics_container{
+    display: flex;
+    /* Setting a gap between all the elements */
+    gap: 10px;
+    /* Setting a gap between the container and the elements */
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.topics_container p{
+    /* Setting the border between the elements */
+    border: solid grey 2px;
+    padding: 10px;
+
+    flex-grow: 1;
+    /* Setting flex-basis for maintainimg all items equally as 3/3 */
+    flex-basis: 25%;
+}
+
+/* Section-05 Popular Section */
+.popular{
+    padding: 10px;
+}
+
+.popular__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Section-06 Footer Section  */
+.footer{
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.footer__one{
+display: flex;
+gap: 20px;
+}
+
+/* Adding Margin to all paragraphs*/
+.footer__one p{
+   margin: 20px; 
+}
+
+.footer__two{
+    margin: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}

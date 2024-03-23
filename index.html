@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy</title>
+    <!-- Google Stylesheet for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+    <!-- Linking My Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Adding Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- Section-01 -->
+    <!-- Creating a Navbar -->
+    <!-- Creating a container for the Navbar, so creating div -->
+    <div class="navbar">
+        <!-- we are going to create two division for the alighnment
+        one is on the left and another one on the right side -->
+        <!-- Also keeping the search bar seperately -->
+
+        <!-- First Division -->
+        <div class="navbar__s1">
+            <h1 class="navbar__s1__title">Udemy</h1>
+        </div>
+
+        <!-- Second Division -->
+        <div class="navbar__s2">
+            <!-- Adding text from Font Awesome -->
+            <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+            <!-- Adding text box for the input -->
+            <input placeholder="Search for anything here. Tech, Business, etc">
+        </div>
+
+        <!-- Third Division -->
+        <div class="navbar__s3">
+            <p>Courses</p>
+            <p>My Learning</p>
+            <!-- Adding cart icon from Font Awesome -->
+            <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+            <!-- Adding notification icon from Font Awesome -->
+            <i class="fa-solid fa-bell" style="color: #000000;"></i>
+            <!-- Adding user icon from Font Awesome -->
+            <i class="fa-solid fa-user" style="color: #000000;"></i>
+        </div>
+    </div>
+
+    <!-- Section-02 -->
+    <!-- categories -->
+    <div class="categories">
+        <p>Development</p>
+        <p>Business</p>
+        <P>IT & Software</P>
+        <P>Personal Development</P>
+        <P>Design</P>
+        <P>Marketing</P>
+    </div>
+
+    <!-- Section-03 -->
+    <!-- Sales Image Section -->
+    <div class="sale-image">
+        <img src="./images/sale-image.jpg" alt="Sale Image">
+    </div>
+
+    <!-- Section-04 Course Card Section-->
+    <!-- Recommended -->
+    <div class="recommended">
+        <h1 class="recommended__title">Recommended for you</h1>
+        <p>Pick the best fit</p>
+        <!-- Creating another div container -->
+        <div class="recommended__container">
+
+
+            <!-- Creating another div item 01 in the container -->
+            <div class="course-card">
+                <img src="./images/c1.jpg" alt="Course 1">
+                <h3>2023 Python Data Visualisation Masterclass</h3>
+                <p>Col Steel</p>
+                <p>4.9⭐⭐⭐⭐⭐</p>
+                <p>$16.99</p>
+                <!-- Adding strikeout price tags -->
+                <del>$59.99</del>
+            </div>
+
+            <!-- Creating another div item 02 in the container -->
+            <div class="course-card">
+                <img src="./images/c2.jpg" alt="Course 2">
+                <h3>Basic to Advance Java</h3>
+                <p>Bruce</p>
+                <p>4.2⭐⭐⭐</p>
+                <p>$10.99</p>#
+                <del>$89.99</del>
+            </div>
+
+            <!-- Creating another div item 03 in the container -->
+            <div class="course-card">
+                <img src="./images/c3.jpg" alt="Course 3">
+                <h3>Web Development</h3>
+                <p>Pine</p>
+                <p>4.6⭐⭐⭐⭐</p>
+                <p>$13.99</p>
+                <del>$79.99</del>
+            </div>
+
+            <!-- Creating another div item 04 in the container -->
+            <div class="course-card">
+                <img src="./images/c4.jpg" alt="Course 4">
+                <h3>Master UI/UX Designing with Sigma</h3>
+                <p>Scoobie</p>
+                <p>4.0⭐⭐</p>
+                <p>$18.99</p>
+                <del>$159.99</del>
+            </div>
+
+        </div>
+
+        <!-- Creating Topics -->
+        <div class="Topics">
+            <h1 class="topics_title">Topics recommended for you</h1>
+            <div class="topics_container">
+                <p>Website</p>
+                <p>JavaScript</p>
+                <p>CSS</p>
+                <p>Mongo DB</p>
+                <p>Azure</p>
+                <p>GitHub</p>
+                <p>ReactJS</p>
+                <p>Python</p>
+                <p>Java</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Section-05 Popular Section-->
+    <div class="popular">
+        <h1 class="popular__title">Most Popular</h1>
+        <p class="popular__subtitle">Pick the best fit</p>
+        <div class="popular__container">
+
+            <!--    Copying from the course card to make changes here with popular  
+                    Creating another div item 01 in the container  -->
+            <div class="course-card">
+                <img src="./images/c1.jpg" alt="Course 1">
+                <h3>2023 Python Data Visualisation Masterclass</h3>
+                <p>Col Steel</p>
+                <p>4.9⭐⭐⭐⭐⭐</p>
+                <p>$16.99</p>
+                <!-- Adding strikeout price tags -->
+                <del>$59.99</del>
+            </div>
+
+            <!-- Creating another div item 02 in the container -->
+            <div class="course-card">
+                <img src="./images/c2.jpg" alt="Course 2">
+                <h3>Basic to Advance Java</h3>
+                <p>Bruce</p>
+                <p>4.2⭐⭐⭐</p>
+                <p>$10.99</p>#
+                <del>$89.99</del>
+            </div>
+
+            <!-- Creating another div item 03 in the container -->
+            <div class="course-card">
+                <img src="./images/c3.jpg" alt="Course 3">
+                <h3>Web Development</h3>
+                <p>Pine</p>
+                <p>4.6⭐⭐⭐⭐</p>
+                <p>$13.99</p>
+                <del>$79.99</del>
+            </div>
+
+            <!-- Creating another div item 04 in the container -->
+            <div class="course-card">
+                <img src="./images/c4.jpg" alt="Course 4">
+                <h3>Master UI/UX Designing with Sigma</h3>
+                <p>Scoobie</p>
+                <p>4.0⭐⭐</p>
+                <p>$18.99</p>
+                <del>$159.99</del>
+            </div>
+
+            <!-- Adding another 4 + 4 items in the container -->
+
+            <div class="course-card">
+                <img src="./images/c1.jpg" alt="Course 1">
+                <h3>2023 Python Data Visualisation Masterclass</h3>
+                <p>Col Steel</p>
+                <p>4.9⭐⭐⭐⭐⭐</p>
+                <p>$16.99</p>
+                <!-- Adding strikeout price tags -->
+                <del>$59.99</del>
+            </div>
+
+            <!-- Creating another div item 02 in the container -->
+            <div class="course-card">
+                <img src="./images/c2.jpg" alt="Course 2">
+                <h3>Basic to Advance Java</h3>
+                <p>Bruce</p>
+                <p>4.2⭐⭐⭐</p>
+                <p>$10.99</p>#
+                <del>$89.99</del>
+            </div>
+
+            <!-- Creating another div item 03 in the container -->
+            <div class="course-card">
+                <img src="./images/c3.jpg" alt="Course 3">
+                <h3>Web Development</h3>
+                <p>Pine</p>
+                <p>4.6⭐⭐⭐⭐</p>
+                <p>$13.99</p>
+                <del>$79.99</del>
+            </div>
+
+            <!-- Creating another div item 04 in the container -->
+            <div class="course-card">
+                <img src="./images/c4.jpg" alt="Course 4">
+                <h3>Master UI/UX Designing with Sigma</h3>
+                <p>Scoobie</p>
+                <p>4.0⭐⭐</p>
+                <p>$18.99</p>
+                <del>$159.99</del>
+            </div>
+
+            <div class="course-card">
+                <img src="./images/c1.jpg" alt="Course 1">
+                <h3>2023 Python Data Visualisation Masterclass</h3>
+                <p>Col Steel</p>
+                <p>4.9⭐⭐⭐⭐⭐</p>
+                <p>$16.99</p>
+                <!-- Adding strikeout price tags -->
+                <del>$59.99</del>
+            </div>
+
+            <!-- Creating another div item 02 in the container -->
+            <div class="course-card">
+                <img src="./images/c2.jpg" alt="Course 2">
+                <h3>Basic to Advance Java</h3>
+                <p>Bruce</p>
+                <p>4.2⭐⭐⭐</p>
+                <p>$10.99</p>#
+                <del>$89.99</del>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Section-05 Footer Section -->
+    <!-- Splitting the Footer into section one and two, and then
+    splitting the section one intto two as s1 and s2 -->
+    <div class="footer">
+        <!-- Footer ONE Section -->
+        <div class="footer__one">
+            <div class="footer__one__s1">
+                <p>Udemy Business</p>
+                <p>Teach On Udemy</p>
+                <p>Get the app</p>
+                <p>About Us</p>
+                <p>Contact Us</p>
+            </div>
+
+            <div class="footer__one__s2">
+                <p>Careers</p>
+                <p>Blog</p>
+                <p>Help and Support</p>
+                <p>Affiliate</p>
+                <p>Investors</p>
+            </div>
+        </div>
+
+        <!-- Footer TWO Section -->
+        <div class="footer__two">
+            <h1>Udemy</h1>
+            <p>&copy; Udemy, Inc</p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
